@@ -22,7 +22,7 @@ function currentLine (katzDeliLine) {
       newLineArray.push(` ${newLineArray.length + 1}. ${katzDeliLine.shift()}`);
     }
     newLineArray.unshift(index);
-    return newLineArray;
+    return newLineArray.toString();
     //make a loop that adds a number next to the current peoples names
   } else {
     return "The line is currently empty.";
