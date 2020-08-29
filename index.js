@@ -16,6 +16,12 @@ function nowServing (katzDeliLine) {
 
 function currentLine (katzDeliLine) {
   if (katzDeliLine.length > 0) {
+    var index = 'The line is currently: ${katzDeliLine.shift()}';
+    var newLineArray = [];
+    while (katzDeliLine.length >0) {
+      newLineArray.pop(`${newLineArray.length + 1}. ${katzDeliLine.shift()}`);
+    }
+    return [index,newLineArray];
     //make a loop that adds a number next to the current peoples names
   } else {
     return "The line is currently empty.";
