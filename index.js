@@ -8,7 +8,7 @@ function nowServing (katzDeliLine) {
   if (katzDeliLine.length > 0) {
     //there is a problem i have when it comes to determining what the first persons name is and taking it out. i know i can do it in one line too
     return `Currently serving ${katzDeliLine.unshift()}`;
-    
+
   } else {
     return "There is nobody waiting to be served!";
   }
