@@ -19,7 +19,7 @@ function currentLine (katzDeliLine) {
   var newLineArray = [];
   if (katzDeliLine.length > 0) {
     while (katzDeliLine.length >0) {
-      newLineArray.pop(`${newLineArray.length + 1}. ${katzDeliLine.shift()}`);
+      newLineArray.push(`${newLineArray.length + 1}. ${katzDeliLine.shift()}`);
     }
     return [newLineArray];
     //make a loop that adds a number next to the current peoples names
