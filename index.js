@@ -19,7 +19,7 @@ function currentLine (katzDeliLine) {
   var newLineArray = [];
   if (katzDeliLine.length > 0) {
     while (katzDeliLine.length >0) {
-      newLineArray.push(` ${newLineArray.length + 1}. ${katzDeliLine.shift()}`);
+      newLineArray.push(` ${newLineArray.length + 2}. ${katzDeliLine.shift()}`);
     }
     newLineArray.unshift(index);
     return newLineArray.toString();
