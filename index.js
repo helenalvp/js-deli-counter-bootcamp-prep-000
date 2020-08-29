@@ -15,9 +15,9 @@ function nowServing (katzDeliLine) {
 }
 
 function currentLine (katzDeliLine) {
+  var index = `The line is currently: 1. ${katzDeliLine.shift()}`;
+  var newLineArray = [];
   if (katzDeliLine.length > 0) {
-    var index = `The line is currently: 1. ${katzDeliLine.shift()}`;
-    var newLineArray = [];
     while (katzDeliLine.length >0) {
       newLineArray.pop(`${newLineArray.length + 1}. ${katzDeliLine.shift()}`);
     }
